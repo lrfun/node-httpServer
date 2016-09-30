@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="renderer" content="webkit" />
+ <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+<head>
+<title>pushState demo</title>
+<style>
+    body {
+        font-family: "Microsoft YaHei"; 
+        transition: background-color .3s;
+    }
+    .bg-org {
+        color: #383c3c;
+        background-color: #FF6633;
+    }
+    .bg-blue {
+        color: #fbfaf5;
+        background-color: #6699FF;
+    }
+    .time {
+        margin-top: 20%;
+        text-align: center;
+        font-size: 4em;
+        font-weight: 100;
+    }
+    .switch {
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        position:absolute;
+        bottom:25%;
+        left:0;
+        right:0;
+        cursor:pointer;
+        box-shadow: 0 0 0 5px rgba(255,255,255,.6);
+        border-radius: 50%;
+        transition: box-shadow .1s;
+    }
+    .switch:hover {
+        box-shadow: 0 0 0 5px rgba(255,255,255,.75);
+    }
+    .switch:active {
+        box-shadow: 0 0 0 30px rgba(255,255,255,.4);
+    }
+</style>
+</head>
+
+<body class="bg-org">
+    <h1 id="time" class="time">Loading...</h1>
+    <div id="switch" class="switch"></div>
+</body>
+</html>
